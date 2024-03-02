@@ -31,6 +31,12 @@
 */
 
 //CODE HERE
+const pizza = {
+name: 'veggie',
+price: 10.99,
+
+
+}
 
 
 

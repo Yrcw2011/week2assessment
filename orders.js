@@ -28,10 +28,24 @@
     Where CUSTOMERID and STATUS reference the values
     stored on the object.
 */
-
+//create first class called Ticket {}
+//create a constructor with ( a, b, c)
+//make property called 'status' with a value of 'queued'
+//created method on class called updateStatus {} 
+//create constructor with (D)
+//inside method set value of this.status as a new status.
+//console.log =========
 //CODE HERE
 
-
+class Ticket {
+    constructor(items, orderTime, customerId) {
+        this.items = items;
+        this.orderTime = orderTime;
+        this.customerId = customerId;
+        let status = queued;
+    }
+        const updateStatus = class {}
+}
 
 /*
     Create a new instance of your class.

@@ -17,7 +17,8 @@
     array method to calculate the sum of all
     the food. 
 */
-
+// callBack method using reduce array method
+// calculate the sum of food
 const cart = [
     {
         name: 'pizza', 
@@ -34,11 +35,12 @@ const cart = [
 ]
 
 //CODE HERE
-function sumArray(array){
-const sum = array.reduce((name, price) => total + price);
-return sum;
-}
-console.log(price)
+//console.log(cart);
+
+// I struggeled with currentvalue.price i only got it by elimination...
+let sumPrice = cart.reduce((totalNumber, currentValue) => totalNumber + currentValue.price, 0 );
+console.log(sumPrice);
+
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
@@ -58,7 +60,7 @@ console.log(price)
 */
 
 //CODE HERE
-
+let calcFinalPrice = cart.total((cartTotal, couponValue, tax) => )
 
 
 //////////////////PROBLEM 3////////////////////
@@ -85,7 +87,7 @@ console.log(price)
     TEXT ANSWER HERE
 
 */
-
+//////////////I am so lost!!
 /*
     Now, create a customer object following your own
     guidelines.
