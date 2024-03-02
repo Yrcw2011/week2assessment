@@ -34,7 +34,11 @@ const cart = [
 ]
 
 //CODE HERE
-
+function sumArray(array){
+const sum = array.reduce((name, price) => total + price);
+return sum;
+}
+console.log(price)
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 

@@ -20,9 +20,18 @@
 */
 
 //CODE HERE
+class Employee {
+constructor(name, shifts){
+    this.name = name;
+    this.shifts = shifts;
+ console.log('Mitch works')
+ console.log('Several Shifts')
+}
+
+}
 
 
-
+str2 = this.shifts('At night')
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -34,7 +43,9 @@
 */
 
 //CODE HERE
-
+const = empOne()
+    constructor()
+}
 /*
     Call the `getSchedule` method on the
     `empOne` object.
