@@ -20,36 +20,60 @@
     argument, `greetUser` should return the string:
     'Welcome back, Andrew'
 */
-
+//let add = (x, y) => x + y;
 //CODE HERE
 
+
+
+    
+
+    
 
 
 
 
 //////////////////PROBLEM 2////////////////////
-/* 
-    Below is an array of zip codes that are in
-    the restaurant's delivery zone. 
 
-    Write a function called `canWeDeliver` that
-    takes in one argument, `zipCode`.
+let greetUser = (userName) => "Welcome back " + userName;
+    console.log(greetUser('Mitch'));
 
-    If the zip code passed in is in the array,
-    return a string letting the user know they
-    are eligible for delivery. If they are not, 
-    return a string letting them know that. 
+    
+    
+    
+    // Below is an array of zip codes that are in
+    // the restaurant's delivery zone. 
 
-    For example:
-    canWeDeliver(84606) 
+    // Write a function called `canWeDeliver` that
+    // takes in one argument, `zipCode`.
+
+    // If the zip code passed in is in the array,
+    // return a string letting the user know they
+    // are eligible for delivery. If they are not, 
+    // return a string letting them know that. 
+
+    // For example:
+    //canWeDeliver(84606);
         // `Sorry, we can't deliver to that address`
-    canWeDeliver(85205) 
+    //canWeDeliver(85205);
         // `You're in our delivery zone!`
-*/
 
-const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
+
+
 
 //CODE HERE
+
+const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
+const canWeDeliver = (zipCode) => deliveryAreaZipCodes.includes(zipCode);
+if (canWeDeliver(85203))
+{
+    console.log(`You are in our delivery zone!`);
+}
+else
+{
+    console.log(`Sorry, we can't deliver to that address`);
+}
+
+
 
 
 
@@ -69,6 +93,25 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
     loop (for loop, higher order array method).
     Name your new function `canWeDeliverTwo`.
 */
+
+//const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
+
+const canWeDeliverTwo = (zipCode) => {
+   for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
+    if ( deliveryAreaZipCodes[i] == zipCode )
+            return true;
+  }
+  return false;
+}
+  
+if (canWeDeliverTwo(85203))
+{
+    console.log(`You are in our delivery zone!`);
+}
+else
+{
+    console.log(`Sorry, we can't deliver to that address`);
+}
 
 // CODE HERE
 
@@ -108,7 +151,8 @@ const deals = [
 
 //CODE HERE
 
-
+deals[0].title = deals[0].title.replace("15", "10");
+console.log(deals);
 
 /*
     The restaurant is going to continue its
@@ -124,3 +168,7 @@ const deals = [
 */
 
 //CODE HERE
+deals[1].desc=deals[1].desc.replace("March", "April");
+deals[1].desc=deals[1].desc.trim();
+console.log(deals);
+console.log()
