@@ -29,15 +29,16 @@
     user might filter by, like 'gluten-free' or
     'kids'
 */
-
+// I do not understand the last part about tags.
 //CODE HERE
 const pizza = {
 name: 'veggie',
 price: 10.99,
-
+category: "round",
+popularity: 10,
+rating: 9.9,
 
 }
-
 
 
 //////////////////PROBLEM 2////////////////////
@@ -49,7 +50,7 @@ price: 10.99,
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -61,12 +62,12 @@ price: 10.99,
 //CODE HERE
 
 
-/*
-    Third, destructure the price off of the
-    pizza object.
     
-    Print the value of your new price variable.
-*/
+//Third, destructure the price off of the
+    //pizza object.
+    
+    //Print the value of your new price variable.
+//*/
 
 //CODE HERE
 

@@ -44,9 +44,8 @@ class Ticket {
         this.customerId = customerId;
         let status = queued;
     }
-        const updateStatus = class {}
-}
-
+    }
+    
 /*
     Create a new instance of your class.
     Save it to a variable called `firstTicket`.
@@ -59,8 +58,10 @@ class Ticket {
 */
 
 //CODE HERE
+   
 
-
+     
+    
 /*
     Call the `updateStatus` method on
     `firstTicket` passing in the string

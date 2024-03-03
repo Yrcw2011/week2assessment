@@ -98,7 +98,7 @@ else
 
 // new function called canWEDeliverTwo
 //us a for loop
-//I got really hung up on the includes method. I was ok using it on the last one but it would not work here. 
+//I got really hung up on the includes method. I was ok using it on the last one but it would not work here. '
 
 // CODE HERE
 
@@ -150,7 +150,9 @@ const deals = [
     to be itself, but use the `replace` method
     to replace the 15 with a 10.
 */
-
+//reduce 15% to 10%
+//reassign value of first deals
+//use replace method for 15 to 10
 //CODE HERE
 
 deals[0].title = deals[0].title.replace("15", "10");
@@ -168,7 +170,9 @@ console.log(deals);
     whitespace in this string, since it seems
     to be displaying wrong on the live site.
 */
-
+//reassign value of 2nd deal desc to be the same
+//use the replace method to change march to april
+//remove whitespace in the string.  
 //CODE HERE
 deals[1].desc=deals[1].desc.replace("March", "April");
 deals[1].desc=deals[1].desc.trim();

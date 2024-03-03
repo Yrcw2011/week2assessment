@@ -23,15 +23,19 @@
 class Employee {
 constructor(name, shifts){
     this.name = name;
-    this.shifts = shifts;
- console.log('Mitch works')
- console.log('Several Shifts')
-}
+    this.shifts = shifts;}
+     getSchedule() {
+     return this.name + ' works on ' + this.shifts;
+    
+     }
+//console.log('Mitch works')
+ //console.log('Several Shifts')
+
 
 }
 
 
-str2 = this.shifts('At night')
+//str2 = this.shifts('At night')
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -43,9 +47,11 @@ str2 = this.shifts('At night')
 */
 
 //CODE HERE
-const = empOne()
-    constructor()
-}
+const empOne = new Employee('Mitch', 'weekday mornings');
+
+ 
+    
+
 /*
     Call the `getSchedule` method on the
     `empOne` object.
@@ -53,7 +59,7 @@ const = empOne()
 
 //CODE HERE
 
-
+console.log(empOne.getSchedule());
 /*
     Make a copy of the empOne object
     using the spread operator.
@@ -67,7 +73,8 @@ const = empOne()
 */
 
 //CODE HERE
-
+const empTwo = new Employee('Nick', '');
+console.log(empTwo.name);
 
 
 //////////////////PROBLEM 2////////////////////
@@ -91,11 +98,45 @@ const = empOne()
     should be a string of an employee name.
     The function should push the name into 
     the employees array. 
-*/
+*///////////////////////
+//write a class called Manager that extends the employee class.
+//
+//in constructor require all paramaters with a new employee class and 1 new one: employees
+
+//these employees will be in an array that reports directly to the Manager.  
+//Hint use a super function
+//
+//create a method called getEmployees that console.logs a string.
+
+//Name manages EMPLOYEES. Where they reference the values stored on the object.
+//
+//create a 2nd method called addEmployee that takes in the argument emp 
+
+//this should be a string of an employee name.
+
+//the function should push the name into the employees array.
+///////////////////////////////////
+//I am soooooooo lost on this one.  I think I have several different examples mixed in with this 
+// one problem and now I am so turned around I cannot think.  
+
 
 //CODE HERE
 
+let employees = Array.Employee['EmployeeOne', 'EmployeeTwo'];
 
+class Manager extends Employee {
+constructor(name, shifts, employees) {
+    super(name, shifts);
+    this.employees = employees;
+    }
+
+   
+    getEmployees() {
+        return this.name + ' Manages Employees ' + this.employees;
+        }
+}
+
+const managerOne = new Manager('Nick', ' Shift ', );
 
 /*
     Create a new instance of your class.
